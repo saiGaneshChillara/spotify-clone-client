@@ -6,7 +6,7 @@ import { HeadphonesIcon, Music, Users } from "lucide-react";
 import { useEffect } from "react";
 
 const FriendsActivity = () => {
-  const { users, isLoading, error, fetchUsers } = useChatStore();
+  const { users, fetchUsers } = useChatStore();
   const { user } = useUser();
   useEffect(() => {
     if (user) {
